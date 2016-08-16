@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<title>Error Page</title>
+	</head>
+	<body>
+		<div class="error-message-container" >
+			<h1 class="label">Error !</h1> 
+			<p  class="label">status : </p> <p th:text="${errorJson.status}" />
+			<p  class="label">error : </p> <p th:text="${errorJson.message}" />
+			<p  class="label">message : </p> <p th:text="${errorJson.message}" />
+			<p  class="label">timeStamp : </p> <p th:text="${errorJson.timeStamp}" />
+			<p  class="label">trace : </p> <p th:text="${errorJson.trace}" />
+			 
+		</div>
+	</body>
+</html>
+
